@@ -1,6 +1,6 @@
 {
-  "name": "strapi-plugin-revalidate-button",
-  "version": "1.0.6",
+  "name": "@dathaplus/strapi-plugin-revalidate-button",
+  "version": "1.0.4",
   "description": "Adds a revalidate button to the content manager edit view.",
   "keywords": [
     "strapi",
@@ -15,13 +15,13 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Dudi Kaplan",
-    "url": "https://github.com/DudiKaplan"
+    "name": "Jonnathan Acosta",
+    "url": "https://github.com/JonnathanAcostas"
   },
   "maintainers": [
     {
-      "name": "Dudi Kaplan",
-      "url": "https://github.com/DudiKaplan"
+      "name": "Jonnathan Acosta",
+      "url": "https://github.com/JonnathanAcostas"
     }
   ],
   "scripts": {
