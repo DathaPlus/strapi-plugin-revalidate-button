@@ -11,15 +11,19 @@ import { useNotification } from "@strapi/strapi/admin";
 import getTrad from "../../utils/getTrad";
 
 interface FormContext {
-  initialValues: { slug: string; publishedAt?: string };
-  values: { slug: string; publishedAt?: string };
+  initialValues: { slug: string; published_at?: string };
+  values: { slug: string; published_at?: string };
 }
 
 const RevalidateButton = () => {
-  const { slug, form } = useContentManagerContext();
-
-  // Cast form to the correct type
+  const { form } = useContentManagerContext();
+  
   const { initialValues } = form as FormContext;
+
+  useEffect(() => {
+    console.log("initialValues", initialValues);
+    console.log("publishedAt", initialValues?.published_at);
+  }, [initialValues]);
 
   const { toggleNotification } = useNotification();
   const { formatMessage } = useIntl();
@@ -82,7 +86,7 @@ const RevalidateButton = () => {
     }
   }, [webhooksError]);
 
-  return !isWebhooksLoading && initialValues?.publishedAt ? (
+  return !isWebhooksLoading ? (
     <Button
       onClick={handleClick}
       size="M"
@@ -96,7 +100,7 @@ const RevalidateButton = () => {
       })}
     </Button>
   ) : (
-    <></>
+    <>Hola DT+</> 
   );
 };
 

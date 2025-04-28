@@ -31,7 +31,7 @@ export default {
   },
 
   bootstrap(app) {
-    app.injectContentManagerComponent("editView", "right-links", {
+    app.getPlugin('content-manager').injectComponent("editView", "right-links", {
       name: pluginId,
       Component: RevalidateButton,
     });
@@ -45,7 +45,7 @@ export default {
         )
           .then(({ default: data }) => {
             return {
-              data: prefixPluginTranslations(data, pluginId),
+              data: prefixPluginTranslations(data, pluginId), 
               locale,
             };
           })

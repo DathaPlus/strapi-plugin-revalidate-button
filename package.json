@@ -1,6 +1,6 @@
 {
   "name": "@dathaplus/strapi-plugin-revalidate-button",
-  "version": "1.0.4",
+  "version": "1.0.10",
   "description": "Adds a revalidate button to the content manager edit view.",
   "keywords": [
     "strapi",
