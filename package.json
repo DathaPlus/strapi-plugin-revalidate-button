@@ -2,31 +2,18 @@
   "name": "strapi-plugin-revalidate-button",
   "version": "1.0.6",
   "description": "Adds a revalidate button to the content manager edit view.",
-  "strapi": {
-    "name": "revalidate-button",
-    "description": "Adds a revalidate button to the content manager edit view.",
-    "kind": "plugin",
-    "displayName": "Revalidate Button"
+  "keywords": [
+    "strapi",
+    "plugin",
+    "preview",
+    "revalidate",
+    "next"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DudiKaplan/strapi-plugin-revalidate-button.git"
   },
-  "dependencies": {
-    "@strapi/design-system": "^1.6.3",
-    "@strapi/icons": "^1.6.3",
-    "prop-types": "^15.7.2",
-    "react-query": "^3.39.3"
-  },
-  "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.6"
-  },
-  "peerDependencies": {
-    "@strapi/strapi": "^4.4.0",
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0",
-    "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.6"
-  },
+  "license": "MIT",
   "author": {
     "name": "Dudi Kaplan",
     "url": "https://github.com/DudiKaplan"
@@ -37,23 +24,37 @@
       "url": "https://github.com/DudiKaplan"
     }
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@strapi/design-system": "2.0.0-rc.23",
+    "@strapi/icons": "2.0.0-rc.23",
+    "prop-types": "^15.7.2",
+    "react-query": "^3.39.3"
+  },
+  "devDependencies": {
+    "@types/jscodeshift": "^17.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DudiKaplan/strapi-plugin-revalidate-button.git"
-  },
-  "keywords": [
-    "strapi",
-    "plugin",
-    "preview",
-    "revalidate",
-    "next"
-  ]
+  "strapi": {
+    "name": "revalidate-button",
+    "description": "Adds a revalidate button to the content manager edit view.",
+    "kind": "plugin",
+    "displayName": "Revalidate Button"
+  }
 }
